@@ -12,8 +12,7 @@
         while (personajePrincipal.EstaVivo() && personajeSecundario.EstaVivo())
         {
             personajePrincipal.Atacar(personajeSecundario);        
-            if (personajeSecundario.EstaVivo())
-                personajeSecundario.Atacar(personajePrincipal);
+            personajeSecundario.Atacar(personajePrincipal);
             Console.WriteLine(contador + ".- " + personajePrincipal + " vs " + personajeSecundario);
             contador++;
         };
